@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "software-factory/requirement",
+  "type": "object",
+  "required": [
+    "id",
+    "statement"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "statement": {
+      "type": "string"
+    },
+    "critical": {
+      "type": "boolean"
+    },
+    "weight": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

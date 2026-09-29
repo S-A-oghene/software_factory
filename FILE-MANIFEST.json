@@ -1,0 +1,401 @@
+{
+  "version": "0.1.0",
+  "edition": "GUI-FIRST",
+  "files": [
+    {
+      "path": ".devcontainer/devcontainer.json",
+      "bytes": 526,
+      "sha256": "4f45fa1546ebb6adb7c26c821b79b93252de00fd13d612e9c0f665fc359b56d1"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 429,
+      "sha256": "ec6c30316dfcc79109bc83862e6df7d7476ff54e0863e8b4bfd620e27694468d"
+    },
+    {
+      "path": ".github/workflows/release-evidence.yml",
+      "bytes": 695,
+      "sha256": "be26451b23fa5fe6150d283fbb443a2ea2c8513c9915b11bd07e6cec86d8b8b9"
+    },
+    {
+      "path": ".github/workflows/security.yml",
+      "bytes": 697,
+      "sha256": "de0778aad9d547cfe3b7c71792bf3e332ade38253d1d75c394b7c5cff4e12caa"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 180,
+      "sha256": "5f2c025d661796d38c9ce45c5afce6fe4e8c61a02b9c5b3090153970deb6eda2"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1654,
+      "sha256": "eaa2a2d3c02adb41b70c4b968f6a95c961c9c7850e9d9d37d3a84eeec2e7b36b"
+    },
+    {
+      "path": "GUI-CHANGE-OVERVIEW.md",
+      "bytes": 720,
+      "sha256": "d0fffd606ac50ec7be9d6cd0d288a50fa8ebffe548a86ec159942747507eea14"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1081,
+      "sha256": "ffce8ae88bc77f5e8880fffa4e5705db51a8e6e275ae9357fbbeb684fcb4a0b0"
+    },
+    {
+      "path": "README-FIRST.md",
+      "bytes": 2933,
+      "sha256": "a4dcea1581858f30786266c338f7f6b831bfbc76177b7db387bfdcfffe2729c0"
+    },
+    {
+      "path": "benchmarks/challenges/ampa-ai-digital-architecture.md",
+      "bytes": 692,
+      "sha256": "9844435a41104b346101f85627bea207df55c0f47faf36bbd1e9abc534f290d0"
+    },
+    {
+      "path": "benchmarks/challenges/distributed-platform-frontier-construction.md",
+      "bytes": 701,
+      "sha256": "985079d3ae67f32950027cf396958fc09a990383220121d6c7c3d38390379068"
+    },
+    {
+      "path": "benchmarks/challenges/mow-frontier-construction.md",
+      "bytes": 669,
+      "sha256": "47511e15bd216f9ea246b0298ad65fef0def751ceedcbe6bfaa4cf609e13ceeb"
+    },
+    {
+      "path": "benchmarks/challenges/ng-frontier-construction.md",
+      "bytes": 686,
+      "sha256": "1ada1e615ce4dbf830896977cb9113cd59ec69749500701d99fdf59041588b38"
+    },
+    {
+      "path": "docs/BEGINNER-DEPLOYMENT-GUIDE.md",
+      "bytes": 746,
+      "sha256": "62585ae55b0c59e40bad97a6d49982a34cffde94fb55aa2f811fe873d66dbafd"
+    },
+    {
+      "path": "docs/BEGINNER-STEP-BY-STEP-SETUP.md",
+      "bytes": 5293,
+      "sha256": "4e9fca17a2827c2329e35192442d9598786ed34d6c7093d5a0058d6460842e18"
+    },
+    {
+      "path": "docs/CLI-INVOCATION.md",
+      "bytes": 760,
+      "sha256": "04db696d2f44a5711b0a68277b96a5eb319f1901f142d6e8ca2613b49efc934d"
+    },
+    {
+      "path": "docs/CRUD-AND-REPOSITORY-OPERATIONS.md",
+      "bytes": 849,
+      "sha256": "442ee1e742da20ed8aa6808d6dc0dd5b0d7c4ec826529601ef989a590e3ed8ad"
+    },
+    {
+      "path": "docs/EXAMPLE-END-TO-END.md",
+      "bytes": 1169,
+      "sha256": "6ff30f2c0239a8ef4f374a055d9276a882ac10288625bcb99e3197746eedd40b"
+    },
+    {
+      "path": "docs/FRONTIER-ACCEPTANCE-FRAMEWORK.md",
+      "bytes": 5354,
+      "sha256": "dc920b1490a0d8c39133f8e7d0c89ebc0af522c1fd9d32d8cda4328eccd4592b"
+    },
+    {
+      "path": "docs/FRONTIER-BROWSER-COWORK.md",
+      "bytes": 1546,
+      "sha256": "4519390e18a7388fdf5e6d23cc254fea80d9de5d4ff052bcf730be685a4beaec"
+    },
+    {
+      "path": "docs/GUI-FIRST-OPERATING-GUIDE.md",
+      "bytes": 6707,
+      "sha256": "99b059c6ce41111be68386851f0c8d33d2f0b7db2e702b13c47e591b4b7053f7"
+    },
+    {
+      "path": "docs/KNOWN-LIMITATIONS.md",
+      "bytes": 983,
+      "sha256": "4d1a5d460f7fb8b7098056a0031aa3651c32e1ba4c9b7870531dfb4785fbe400"
+    },
+    {
+      "path": "docs/KPI-DASHBOARD.md",
+      "bytes": 1055,
+      "sha256": "3fa230b358c5cf4bd39730a43bda399fcd977f3340f0a7846a672bd98008c477"
+    },
+    {
+      "path": "docs/OPERATING-MODEL.md",
+      "bytes": 1045,
+      "sha256": "001cf0a0ea2b7ac9c1dfc6af54f31fc6febee64e39396e276b772994ae79dccf"
+    },
+    {
+      "path": "docs/REGENERATION-NOTES-2026-09-29.md",
+      "bytes": 1776,
+      "sha256": "266b7ca083152c94b7f2f492f429e828cb6c38536922a67c42fb2b91aa1aad08"
+    },
+    {
+      "path": "docs/RESUME-TESTING-VIA-GUI.md",
+      "bytes": 2150,
+      "sha256": "829cb2a74559a0a7c9430751c6c3bd8a0f46cb67f0689c8d8acc87164b0b6815"
+    },
+    {
+      "path": "docs/ROUTINE-OPERATIONS-GUI-CROSSWALK.md",
+      "bytes": 1547,
+      "sha256": "323a6261e1997b9c3012633c8830e71279e89c20fc12ca63876af970f43bc8db"
+    },
+    {
+      "path": "docs/SFCB-SOFTWARE-FACTORY-CONSTRUCTION-BENCHMARK.md",
+      "bytes": 2055,
+      "sha256": "753afeaee9278011cca6197c3b9000caa6557a646181c059d0dc73ace0a2c66b"
+    },
+    {
+      "path": "docs/TROUBLESHOOTING-GUI.md",
+      "bytes": 1502,
+      "sha256": "dd90d505d0330b3b550ef2f628e02e3683a5e87dd22194f6b5e682434149b5c5"
+    },
+    {
+      "path": "docs/V0.1.0_SCOPE_AND_CONTRACT.md",
+      "bytes": 1706,
+      "sha256": "c0ad85ca1a2dc24d38722120cb0b86f848cd839d442ae401f67f4d64d1a7e765"
+    },
+    {
+      "path": "docs/ZIP-INGESTION-AND-CONTINUATION.md",
+      "bytes": 1158,
+      "sha256": "ebf92f4788a031c2ac79dbdffc1fc7c9ae3595722556c6197b4bdd4f17e869dc"
+    },
+    {
+      "path": "examples/shipped_solution/README.md",
+      "bytes": 58,
+      "sha256": "9c72eb7a2c47005de3923b6e92cf89faec30bb4b7fadf5c5dd718cce2383e4cc"
+    },
+    {
+      "path": "examples/shipped_solution/src/app.py",
+      "bytes": 58,
+      "sha256": "7d180e1afb7777ad22495996b5c0d3fa3cf8df9e420f400e2dc7782dcfaec91b"
+    },
+    {
+      "path": "examples/shipped_solution/tests/test_app.py",
+      "bytes": 94,
+      "sha256": "9f4ffe9612600fe18737f5e3fde0c544286f54159cc187bcb42d7a98c22cdbc5"
+    },
+    {
+      "path": "examples/shipped_solution.zip",
+      "bytes": 511,
+      "sha256": "422f15cc7b97e120d7e19b5072f73f7944a690beca976e40d74df38fd28104d4"
+    },
+    {
+      "path": "factory/__init__.py",
+      "bytes": 22,
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed"
+    },
+    {
+      "path": "factory/__main__.py",
+      "bytes": 79,
+      "sha256": "307299fda7b77d22c64cb51430ec75e5f59d78e9c948786afb3b2544fe45e4b7"
+    },
+    {
+      "path": "factory/agent.py",
+      "bytes": 3129,
+      "sha256": "ee56b9b13fdc2aef7b69a48d172eac2eebd08c110d161ee9976caf6ced7cf86b"
+    },
+    {
+      "path": "factory/architecture.py",
+      "bytes": 2994,
+      "sha256": "03f462a3b25662e31cb7e21d3358cd246d7f20cbbf572ede6dbcb7e30ebf0fe2"
+    },
+    {
+      "path": "factory/benchmark.py",
+      "bytes": 2759,
+      "sha256": "b112dd836ad8313031e3ddb17f1005d116981da3d8aaae6e910138262d5b8106"
+    },
+    {
+      "path": "factory/capabilities.py",
+      "bytes": 1194,
+      "sha256": "249b5b8d528a00c2fd10dea481c751433c6a64f4f83abcc0b53211a2c5b5cfd3"
+    },
+    {
+      "path": "factory/cli.py",
+      "bytes": 8063,
+      "sha256": "01ce46d0de01fbe9b44f98e9b7732119a8de6e3baacefe183c0c6f72428e1191"
+    },
+    {
+      "path": "factory/crud.py",
+      "bytes": 1936,
+      "sha256": "dd88695ac0292a637454f001f4b1913ea9437fec65860c639f149d9ec5fde607"
+    },
+    {
+      "path": "factory/discovery.py",
+      "bytes": 2386,
+      "sha256": "97b52e17ce6a4bb39f02b79cf54e168b519a655382a2583f30d221eb66b12248"
+    },
+    {
+      "path": "factory/evidence.py",
+      "bytes": 1812,
+      "sha256": "9242ca166a095dc25f570f83f58eb48e80f2f0a5f1b8ebf63283efd3455cbb21"
+    },
+    {
+      "path": "factory/frontier.py",
+      "bytes": 3284,
+      "sha256": "e29f7862e435a9e5f45ec00b98dad3a6b05e789dbf7f2506b6c77b9c3076c83c"
+    },
+    {
+      "path": "factory/ingest.py",
+      "bytes": 2022,
+      "sha256": "c87e4032a26ffe1f186abad131fcf8ec61d2f57c7af5f03770308a9561d0559f"
+    },
+    {
+      "path": "factory/integration.py",
+      "bytes": 2234,
+      "sha256": "939410536eb122371c0058e85737ff2f8f43699a747679c8c72320f1ea1030bb"
+    },
+    {
+      "path": "factory/model.py",
+      "bytes": 1873,
+      "sha256": "fcd9bb70b20c6376f147a76f2f5e543d141b9caf929582c2a48de76b0efba69b"
+    },
+    {
+      "path": "factory/paths.py",
+      "bytes": 657,
+      "sha256": "ffa65bbc840c6993d702e65918e0a3dc53b525ada88a6e8c28d19ba72c97cc3b"
+    },
+    {
+      "path": "factory/planner.py",
+      "bytes": 3805,
+      "sha256": "6ff13681cccd72942116f833455eda404a07743e9f44a7115405ca8b5247292b"
+    },
+    {
+      "path": "factory/policy.py",
+      "bytes": 1294,
+      "sha256": "8b97c171bf0c587185e694402776f119b5b019e33728ec043c9b3b65e04b2123"
+    },
+    {
+      "path": "factory/redact.py",
+      "bytes": 461,
+      "sha256": "d08a12b3314c48e8d6870f76ad279274fc009a3955b5eb4c0251df6390410af1"
+    },
+    {
+      "path": "factory/render.py",
+      "bytes": 1081,
+      "sha256": "7cdb1d2abd2258c0f5e889de62de5c44a7a82c85ccaa762d5c6b73ac5ffd1f1a"
+    },
+    {
+      "path": "factory/report.py",
+      "bytes": 399,
+      "sha256": "9c56e3521f5537081ba8391cfe02897276009949e5c64308ca1b623a4a4372db"
+    },
+    {
+      "path": "factory/repository.py",
+      "bytes": 2424,
+      "sha256": "4cae97db5792481995d0add0664ecbc4b51315353de379b234e08d2ddb82e86d"
+    },
+    {
+      "path": "factory/spec.py",
+      "bytes": 1453,
+      "sha256": "0393753d6b7c619817c2682496f20dec93a4e4ee647b2bf4701ebfb4d5e6cf9a"
+    },
+    {
+      "path": "factory/state.py",
+      "bytes": 1343,
+      "sha256": "70d9ca625041123c603aaeda03e0dc4d5e57584045008d6b15ff2dc32518748d"
+    },
+    {
+      "path": "factory/tools.py",
+      "bytes": 2815,
+      "sha256": "90478b73f2ec0fdb560dbf3b5ada8edaca4308be59fb7cdf848f67976b98460f"
+    },
+    {
+      "path": "factory/webapp.py",
+      "bytes": 41392,
+      "sha256": "e0c32d22892de6fc6ef34c1aabd4da088008d7afe105dd41437a3f2cbef9bb93"
+    },
+    {
+      "path": "schemas/evidence.schema.json",
+      "bytes": 340,
+      "sha256": "0ad35e286117f9f6e29b7dd266c949c1084d5b8a6b5f1826558183daf9b5e8c1"
+    },
+    {
+      "path": "schemas/frontier-benchmark-result.schema.json",
+      "bytes": 433,
+      "sha256": "6ae4c0fb66235a7602e885be2747d92bb3efaded0970e3466df9e694f276c639"
+    },
+    {
+      "path": "schemas/requirement.schema.json",
+      "bytes": 548,
+      "sha256": "3a89fd0f18d3ce2dd704cd13b536381549f1ea38c915c13266e5eaef91d37849"
+    },
+    {
+      "path": "scripts/package.sh",
+      "bytes": 239,
+      "sha256": "71fbb48653115c3cc10f72764bf5885e7414ebc0587bac2f100a884f76988bf2"
+    },
+    {
+      "path": "scripts/start-web-ui.sh",
+      "bytes": 634,
+      "sha256": "3a6457bbca9355b908248db043f8ab3cce7d13e024551ce886c45ac644ff9c9b"
+    },
+    {
+      "path": "scripts/verify_factory.py",
+      "bytes": 641,
+      "sha256": "3103864e58de2b96062800223af592677ba299017851bd8315587ca97b5dcf26"
+    },
+    {
+      "path": "specs/factory.toml",
+      "bytes": 246,
+      "sha256": "57f0b4da4d49f602c0ef5cf66ba5e8d2f2eb17ec084da3783b1ca710923d39c5"
+    },
+    {
+      "path": "specs/targets/ampa-ai.toml",
+      "bytes": 3499,
+      "sha256": "2e0e03776af22e672aca31e8835b9b895885ef82e4c8afdf496753a6333e4297"
+    },
+    {
+      "path": "specs/targets/distributed-platform.toml",
+      "bytes": 2026,
+      "sha256": "7b89b1598b37ddcf454c1554f791843115b3b2eba5da57d9b61a537880552e1c"
+    },
+    {
+      "path": "specs/targets/mow.toml",
+      "bytes": 2257,
+      "sha256": "e99d4d52f58b2e45f4a49c3ad37febd805be18d244656848b525c2f8e37ea7ca"
+    },
+    {
+      "path": "specs/targets/ng-opportunity-intelligence.toml",
+      "bytes": 2008,
+      "sha256": "b2bb77070af6dbcf714807e8dc64293dcec53587fe2273e9a228a6f33519cd13"
+    },
+    {
+      "path": "templates/reference_architecture/ARCHITECTURE-PACK.md",
+      "bytes": 439,
+      "sha256": "37319bd5f6e9d6aed1b6862b8848ad68f91c88a4098b0329483b276791b8c79b"
+    },
+    {
+      "path": "tests/test_cli_entrypoints.py",
+      "bytes": 922,
+      "sha256": "738523ba692f311a7abc6af00d714c3447ea6b7a1a07ede7edbcaaab631160ac"
+    },
+    {
+      "path": "tests/test_cli_invocation.py",
+      "bytes": 941,
+      "sha256": "1930aa9a0b0020c2ebe30f165a6b8ee24d28e98ad79e83e395e61d92b05396da"
+    },
+    {
+      "path": "tests/test_core.py",
+      "bytes": 3041,
+      "sha256": "f5dba83c610c22e3dbd82cc4800b3d28c2b57874e7de07830cdf0e4c8eeb60fe"
+    },
+    {
+      "path": "tests/test_policy.py",
+      "bytes": 406,
+      "sha256": "6257648407c72cbd7d70a92353749f70e2e7e5cd65c2d214cf7779a962384690"
+    },
+    {
+      "path": "tests/test_spec.py",
+      "bytes": 360,
+      "sha256": "be25d8961070ff43f2fa6c48fb2e263ed99545930212fe67465662438ade973f"
+    },
+    {
+      "path": "tests/test_webapp.py",
+      "bytes": 3020,
+      "sha256": "df4bab018aa8022e4769564488d8db35fcc3cbb0ff12c6e78391ba9207497094"
+    },
+    {
+      "path": "web/README.md",
+      "bytes": 1020,
+      "sha256": "da637586bed9194f5b71990d06224d5214c21cdc5bdc2de26a54c6c22a8a4486"
+    }
+  ]
+}

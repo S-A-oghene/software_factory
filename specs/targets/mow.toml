@@ -1,0 +1,78 @@
+[target]
+name = "Marketing Operations Workbench"
+version = "1.0.0"
+profile = "application-platform"
+scale_profile = "bootstrap"
+deployment_profiles = ["zero-budget", "generic-linux", "docker", "kubernetes"]
+
+[capabilities]
+required = [
+  "workspace-isolation",
+  "auditability",
+  "content-lifecycle",
+  "workflow-orchestration",
+  "research",
+  "evidence-lineage",
+  "model-gateway",
+  "provider-neutrality",
+  "human-approval",
+  "governance",
+  "analytics",
+  "observability",
+]
+
+[[requirements]]
+id = "MOW-REQ-001"
+title = "Workspace isolation"
+statement = "Each workspace must isolate its content and operational state from other workspaces."
+critical = true
+weight = 5
+capabilities = ["workspace-isolation", "auditability"]
+
+[[requirements]]
+id = "MOW-REQ-002"
+title = "Content lifecycle"
+statement = "The system must support content creation, revision, scheduling and evidence-backed publication workflows."
+critical = true
+weight = 5
+capabilities = ["content-lifecycle", "workflow-orchestration"]
+
+[[requirements]]
+id = "MOW-REQ-003"
+title = "Research intelligence"
+statement = "The system must represent research findings, sources, evidence and uncertainty without fabricating missing evidence."
+critical = true
+weight = 5
+capabilities = ["research", "evidence-lineage"]
+
+[[requirements]]
+id = "MOW-REQ-004"
+title = "AI gateway"
+statement = "AI providers must be replaceable behind a provider-neutral capability boundary."
+critical = true
+weight = 5
+capabilities = ["model-gateway", "provider-neutrality"]
+
+[[requirements]]
+id = "MOW-REQ-005"
+title = "Human approval"
+statement = "Consequential publication or externally visible actions must support explicit human approval."
+critical = true
+weight = 5
+capabilities = ["human-approval", "governance"]
+
+[[requirements]]
+id = "MOW-REQ-006"
+title = "Operations analytics"
+statement = "The platform must expose operational metrics and auditable history for work performed."
+critical = false
+weight = 3
+capabilities = ["analytics", "observability"]
+
+[[workflows]]
+name = "campaign-to-publication"
+stages = ["brief", "research", "draft", "review", "approval", "schedule", "publish", "measure"]
+
+[[workflows]]
+name = "evidence-governance"
+stages = ["collect", "normalize", "verify", "approve", "archive"]

@@ -1,0 +1,10 @@
+[factory]
+name = "Software_Factory"
+version = "0.1.0"
+mode = "browser-first-autonomous-engineering"
+
+[policy]
+provider_neutral = true
+frontier_claim_requires_benchmark = true
+consumer_web_gui_automation = false
+unrestricted_shell_for_llm = false

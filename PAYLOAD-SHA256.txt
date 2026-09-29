@@ -1,1 +1,0 @@
-db9e61efa46765d9efa38cf7f4bd80a901a3e58f032f79de30e1ccb217eea0f1  software_factory_payload.zip

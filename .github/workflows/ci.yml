@@ -1,0 +1,21 @@
+name: Software_Factory CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Verify factory
+        run: |
+          python3 -m compileall -q factory tests scripts
+          python3 -m unittest discover -s tests -v
+          python3 -m factory self-test
+          python3 scripts/verify_factory.py

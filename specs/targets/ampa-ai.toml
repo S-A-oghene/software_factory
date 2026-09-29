@@ -1,0 +1,104 @@
+[target]
+name = "AMPA-AI Digital Architecture"
+version = "0.1.0"
+profile = "cyber-physical"
+scale_profile = "bootstrap"
+deployment_profiles = ["zero-budget", "generic-linux", "docker", "kubernetes"]
+
+[capabilities]
+required = [
+  "master-orchestrator",
+  "task-decomposition",
+  "global-state",
+  "agent-swarm",
+  "service-interface",
+  "event-messaging",
+  "digital-thread",
+  "provenance",
+  "auditability",
+  "world-model",
+  "simulation",
+  "sim-to-real",
+  "process-planning",
+  "adaptive-control",
+  "safety-supervisor",
+  "quality",
+  "closed-loop-learning",
+  "human-authorization",
+  "governance",
+  "rate-limits",
+  "autonomy-kpis",
+  "benchmarking",
+]
+
+[[requirements]]
+id = "AMPA-REQ-001"
+title = "Master orchestration"
+statement = "The digital architecture must represent high-level goals, decomposition, scheduling and global state management for federated specialized agents."
+critical = true
+weight = 5
+capabilities = ["master-orchestrator", "task-decomposition", "global-state"]
+
+[[requirements]]
+id = "AMPA-REQ-002"
+title = "Specialized agent swarm"
+statement = "The architecture must support heterogeneous specialized agents with standardized external interfaces and asynchronous coordination."
+critical = true
+weight = 5
+capabilities = ["agent-swarm", "service-interface", "event-messaging"]
+
+[[requirements]]
+id = "AMPA-REQ-003"
+title = "Digital thread"
+statement = "Design, material, process, machine, quality and decision lineage must remain traceable across the lifecycle."
+critical = true
+weight = 5
+capabilities = ["digital-thread", "provenance", "auditability"]
+
+[[requirements]]
+id = "AMPA-REQ-004"
+title = "World model"
+statement = "The system must provide interfaces for physics/chemistry/material simulation and learning from real-world prediction error."
+critical = true
+weight = 5
+capabilities = ["world-model", "simulation", "sim-to-real"]
+
+[[requirements]]
+id = "AMPA-REQ-005"
+title = "Adaptive process planning"
+statement = "The architecture must support adaptive manufacturing/process policies using real-time observations while keeping low-level control below an independent safety boundary."
+critical = true
+weight = 5
+capabilities = ["process-planning", "adaptive-control", "safety-supervisor"]
+
+[[requirements]]
+id = "AMPA-REQ-006"
+title = "Quality closed loop"
+statement = "Quality observations must feed back into analysis, simulation and controlled process improvement."
+critical = true
+weight = 5
+capabilities = ["quality", "closed-loop-learning"]
+
+[[requirements]]
+id = "AMPA-REQ-007"
+title = "Human strategic authorization"
+statement = "Strategic expansion, self-replication and similarly consequential actions require explicit human authorization and auditable evidence."
+critical = true
+weight = 5
+capabilities = ["human-authorization", "governance", "rate-limits"]
+
+[[requirements]]
+id = "AMPA-REQ-008"
+title = "Future autonomy measurement"
+statement = "The digital system must instrument future autonomy KPIs including intervention frequency, novel-task automation, recovery, adaptation and simulation-to-reality gap."
+critical = false
+weight = 3
+capabilities = ["autonomy-kpis", "benchmarking"]
+
+[[workflows]]
+name = "design-to-manufacturing-digital-thread"
+stages = ["goal", "design", "material", "simulation", "process-plan", "safety-check", "execution-boundary", "quality", "feedback"]
+
+[[workflows]]
+name = "failure-to-learning-loop"
+stages = ["detect", "diagnose", "simulate", "propose", "authorize-if-required", "apply", "measure", "learn"]

@@ -1,0 +1,25 @@
+name: Software_Factory Security Baseline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  security-baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Check repository for obvious credential strings
+        shell: bash
+        run: |
+          set -euo pipefail
+          if grep -RIn --exclude-dir=.git --exclude-dir=.factory --exclude='*.md' -E '(OPENAI_API_KEY|GITHUB_TOKEN|AWS_SECRET_ACCESS_KEY|PRIVATE_KEY)[[:space:]]*=' .; then
+            echo 'Potential credential assignment found.'
+            exit 1
+          fi
+      - name: Check protected-path policy exists
+        run: test -f factory/policy.py

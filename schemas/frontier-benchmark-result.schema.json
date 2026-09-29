@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "software-factory/frontier-benchmark-result",
+  "type": "object",
+  "required": [
+    "target",
+    "passed",
+    "values",
+    "failed_gates"
+  ],
+  "properties": {
+    "target": {
+      "type": "object"
+    },
+    "passed": {
+      "type": "boolean"
+    },
+    "values": {
+      "type": "object"
+    },
+    "failed_gates": {
+      "type": "array"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+[target]
+name = "Distributed Provider-Neutral Platform"
+version = "1.0.0"
+profile = "distributed-platform"
+scale_profile = "bootstrap"
+deployment_profiles = ["zero-budget", "generic-linux", "docker", "kubernetes"]
+
+[capabilities]
+required = [
+  "event-stream",
+  "idempotency",
+  "replay",
+  "provider-neutrality",
+  "capability-registry",
+  "observability",
+  "auditability",
+  "failure-isolation",
+  "retry",
+  "dead-letter",
+  "portability",
+  "deployment-profiles",
+]
+
+[[requirements]]
+id = "DP-REQ-001"
+title = "Asynchronous coordination"
+statement = "The platform must support asynchronous task/event coordination with idempotent processing and replay semantics."
+critical = true
+weight = 5
+capabilities = ["event-stream", "idempotency", "replay"]
+
+[[requirements]]
+id = "DP-REQ-002"
+title = "Provider neutrality"
+statement = "Core business logic must not depend on a single database, queue, compute or model vendor."
+critical = true
+weight = 5
+capabilities = ["provider-neutrality", "capability-registry"]
+
+[[requirements]]
+id = "DP-REQ-003"
+title = "Observability"
+statement = "Distributed operations must emit correlated logs, metrics, traces and audit evidence."
+critical = true
+weight = 5
+capabilities = ["observability", "auditability"]
+
+[[requirements]]
+id = "DP-REQ-004"
+title = "Failure isolation"
+statement = "A failed component must not corrupt unrelated work and must support bounded retry or dead-letter handling."
+critical = true
+weight = 5
+capabilities = ["failure-isolation", "retry", "dead-letter"]
+
+[[requirements]]
+id = "DP-REQ-005"
+title = "Portability profiles"
+statement = "The same logical architecture must map to multiple deployment profiles without rewriting domain behavior."
+critical = false
+weight = 3
+capabilities = ["portability", "deployment-profiles"]
+
+[[workflows]]
+name = "event-processing"
+stages = ["publish", "accept", "process", "acknowledge", "observe", "replay"]
+
+[[workflows]]
+name = "failure-recovery"
+stages = ["detect", "isolate", "retry", "dead-letter", "replay", "verify"]

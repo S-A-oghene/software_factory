@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "software-factory/evidence",
+  "type": "object",
+  "required": [
+    "target",
+    "requirements"
+  ],
+  "properties": {
+    "target": {
+      "type": "object"
+    },
+    "requirements": {
+      "type": "array"
+    },
+    "extra": {
+      "type": "object"
+    }
+  }
+}

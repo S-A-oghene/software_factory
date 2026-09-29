@@ -1,0 +1,69 @@
+[target]
+name = "Nigeria Opportunity Intelligence"
+version = "1.0.0"
+profile = "application-platform"
+scale_profile = "bootstrap"
+deployment_profiles = ["zero-budget", "generic-linux", "docker", "kubernetes"]
+
+[capabilities]
+required = [
+  "evidence-lineage",
+  "ingestion",
+  "uncertainty",
+  "normalization",
+  "provider-neutrality",
+  "decision-traceability",
+  "analytics",
+  "human-approval",
+  "governance",
+  "workspace-isolation",
+  "authorization",
+]
+
+[[requirements]]
+id = "NG-REQ-001"
+title = "Evidence-first opportunity ingestion"
+statement = "Imported opportunities must preserve provenance and must not invent missing evidence."
+critical = true
+weight = 5
+capabilities = ["evidence-lineage", "ingestion", "uncertainty"]
+
+[[requirements]]
+id = "NG-REQ-002"
+title = "Opportunity normalization"
+statement = "The platform must normalize heterogeneous opportunity sources into a provider-neutral internal representation."
+critical = true
+weight = 5
+capabilities = ["normalization", "provider-neutrality"]
+
+[[requirements]]
+id = "NG-REQ-003"
+title = "Scoring and ranking transparency"
+statement = "Opportunity prioritization must expose the inputs and evidence behind each score."
+critical = true
+weight = 5
+capabilities = ["decision-traceability", "analytics"]
+
+[[requirements]]
+id = "NG-REQ-004"
+title = "Payment boundary"
+statement = "Payment or external commitment actions must require explicit human authorization."
+critical = true
+weight = 5
+capabilities = ["human-approval", "governance"]
+
+[[requirements]]
+id = "NG-REQ-005"
+title = "Multi-tenant data boundary"
+statement = "Separate users or workspaces must not access each other's private opportunity data."
+critical = true
+weight = 5
+capabilities = ["workspace-isolation", "authorization"]
+
+[[workflows]]
+name = "source-to-opportunity"
+stages = ["ingest", "normalize", "verify", "score", "review", "approve", "export"]
+
+[[workflows]]
+name = "uncertainty-handling"
+stages = ["observe", "mark-unknown", "seek-evidence", "re-score", "report"]

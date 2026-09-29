@@ -1,18 +1,21 @@
 {
   "name": "Software_Factory v0.1.0 GUI-first",
-  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
-  "postCreateCommand": "python3 -m compileall -q factory tests scripts",
-  "postStartCommand": "bash scripts/start-web-ui.sh workspaces/demo-import > .software-factory-gui.log 2>&1 &",
   "forwardPorts": [8787],
   "portsAttributes": {
     "8787": {
       "label": "Software_Factory GUI",
-      "onAutoForward": "openBrowser"
+      "onAutoForward": "openBrowser",
+      "visibility": "private"
     }
   },
+  "postStartCommand": "bash scripts/start-web-ui.sh workspaces/demo-import",
   "customizations": {
     "vscode": {
-      "extensions": []
+      "extensions": [],
+      "settings": {
+        "python.analysis.autoImportCompletions": false,
+        "python.analysis.indexing": false
+      }
     }
   }
 }

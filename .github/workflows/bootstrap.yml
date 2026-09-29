@@ -1,0 +1,59 @@
+name: Bootstrap Software Factory
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  bootstrap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout bootstrap repository
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.BOOTSTRAP_TOKEN }}
+          fetch-depth: 0
+
+      - name: Verify bootstrap token is present
+        shell: bash
+        run: test -n "${{ secrets.BOOTSTRAP_TOKEN }}"
+
+      - name: Verify payload checksum
+        shell: bash
+        run: sha256sum -c BOOTSTRAP_UPLOAD/PAYLOAD-SHA256.txt
+
+      - name: Inspect payload archive
+        shell: bash
+        run: unzip -t BOOTSTRAP_UPLOAD/software_factory_payload.zip
+
+      - name: Extract full repository
+        shell: bash
+        run: |
+          mkdir -p .bootstrap-extract
+          unzip -q BOOTSTRAP_UPLOAD/software_factory_payload.zip -d .bootstrap-extract
+          cp -a .bootstrap-extract/. .
+
+      - name: Run deterministic verification
+        shell: bash
+        run: |
+          python3 -m compileall -q factory tests scripts
+          python3 -m unittest discover -s tests -v
+          python3 -m factory self-test
+          python3 scripts/verify_factory.py
+
+      - name: Remove bootstrap-only material
+        shell: bash
+        run: |
+          rm -rf .bootstrap-extract BOOTSTRAP_UPLOAD software_factory_payload.zip PAYLOAD-SHA256.txt
+
+      - name: Commit installed Software_Factory
+        shell: bash
+        run: |
+          git config user.name "Software_Factory Bootstrap"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Bootstrap Software_Factory v0.1.0 GUI-first"
+          git push origin HEAD:main
